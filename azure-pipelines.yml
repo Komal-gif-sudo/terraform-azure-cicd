@@ -14,7 +14,7 @@ steps:
   inputs:
     terraformVersion: 'latest'
 
-- task: AzureCLI@2
+- - task: TerraformInstaller@1
   displayName: 'Terraform Init, Validate, Plan and Apply'
   inputs:
     azureSubscription: 'Azure-Terraform-Connection'
